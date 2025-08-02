@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweaty Meat</title>
+</head>
+<body>
+
+    <div class="workout-selection">
+        <!-- Workout selection...not the actual form -->
+        <h2>Select your workout:</h2>
+        <select>
+            <option value="">--Select Workout--</option>
+            <option value="pushups">Pushups</option>
+            <option value="situps">Situps</option>
+            <option value="squats">Squats</option>
+        </select>
+        <input id="workout-reps" type="number" min="1" max="20" placeholder="Reps">
+        <button id="add-workout">+</button>
+    </div>
+
+    <form class="workout-submission">
+        <h2>--Your Selected Workout--</h2>
+        <div class="workouts">
+            <p>No workout no sweat here!</p>
+             <!-- workouts will go here thanks to JS -->
+        </div>
+        <button type="submit">Start wokring with Sweaty Meat!</button>
+    </form>
+
+</body>
+</html>
