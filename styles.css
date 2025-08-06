@@ -1,0 +1,21 @@
+* {
+    margin-top: 0px;
+}
+
+#header {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.song-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: 400px;
+}
