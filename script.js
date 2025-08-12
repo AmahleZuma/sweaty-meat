@@ -9,6 +9,7 @@ function hide() {
 
 play_pause_button.addEventListener('click', function() {
     console.log('Play!');
+    
 });
 
 hide()
