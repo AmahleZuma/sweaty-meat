@@ -6,9 +6,10 @@
     text-align: center;
 }
 
+/* styling the card...forgot what this does again */
 .card-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* if i make it column then it goes the left...idk why*/
     justify-content: center;
 }
 
@@ -21,15 +22,70 @@
     padding: 20px;
 }
 
+.music-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
 #playpause {
-    margin-left: 90px;
+    width: 50px;   /* match your desired size */
+    height: 50px;
+    object-fit: contain; /* keeps proportions inside */
 }
 
 
+
+/* Centering the progress bar */
 .progressbar {
     display: flex;
     align-items: center;
     gap: 10px;
     width: 100%;
     margin-top: 10px;
+}
+
+/* Change the appearance of the seeker */
+.seeker {
+    flex-grow: 1;
+    height: 5px;
+    appearance: none;
+    --seek-before-width: 0%;
+    background: linear-gradient(
+        to right,
+        #ff0000 0%,
+        #ff0000 var(--seek-before-width, 0%),
+        #ddd var(--seek-before-width, 0%),
+        #ddd 100%
+    );
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seeker::-webkit-slider-thumb {
+    appearance: none;
+    width: 0;
+    height: 0;
+    transition: all 0.2s ease;
+}
+
+/* Thumb appears when you hover */
+.progressbar:hover .seeker::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    background: #000;
+    border-radius: 50%;
+}
+
+.seeker::-webkit-progress-value {
+    background: #ff0000;
+}
+
+#current-time, #duration {
+    display: inline-block;
+    width: 40px; /* enough to fit mm:ss format */
+    text-align: center;
 }
