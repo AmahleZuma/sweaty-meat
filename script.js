@@ -68,7 +68,8 @@ player.addEventListener('loadmetadata', function() {
 // Allow seeker to be interactive via clicking
 progress.addEventListener('input', setProgress);
 
-play_pause_button.src = player.paused ? 'assets/play.svg' : 'assets/pause.svg' // Maintaining the default to play
+// Maintaining the default to play
+play_pause_button.src = player.paused ? 'assets/play.svg' : 'assets/pause.svg' 
 
 hide() // Hide the audio element...looks ghetto and cheap
 
