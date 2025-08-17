@@ -1,3 +1,3 @@
-# Sweaty Meat
+# Basic Audio Player
 
-webdev stuff at the moment
+It basically plays audio.
